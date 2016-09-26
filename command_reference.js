@@ -7,10 +7,6 @@ Game.spawns.Spawn1.createCreep([WORK, CARRY, MOVE], 'Builder1', {
     role: 'builder'
 });
 
-for (var name in Game.rooms) {
-    console.log('Room "' + name + '" has ' + Game.rooms[name].energyAvailable + ' energy');
-}
-
 Game.spawns.Spawn1.createCreep([WORK, WORK, WORK, WORK, CARRY, MOVE, MOVE],
     'HarvesterBig', {
         role: 'harvester'
